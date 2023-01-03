@@ -1,0 +1,90 @@
+.message__box {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  background: #ddd;
+}
+
+.message__header {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding: 0px 15px;
+  background: #f1f1f1;
+}
+
+.friend__img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 4px solid #c0c0c0;
+}
+
+.message__body {
+  padding: 0px 10px;
+  width: 100%;
+  height: calc(100vh - 220px);
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+.message__footer {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+.send__btn {
+  width: 70px;
+  height: 43px;
+  background: #7801ff;
+  color: #fff;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+.message {
+  padding: 10px 20px;
+  justify-content: flex-start;
+  background: #a4cbfd;
+  color: #000000;
+  max-width: 400px;
+  align-self: flex-start;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px;
+  border-radius: 25px 25px 25px 0px;
+}
+
+.message__me {
+  max-width: 400px;
+  align-self: flex-end;
+  background: #eeeeee;
+  color: #000;
+  border-radius: 25px 25px 0px 20px;
+}
+
+.message p {
+  max-width: 400px;
+  margin-bottom: 5px;
+}
+.message span {
+  font-size: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  .message__body {
+    height: calc(100vh - 350px);
+  }
+  .send__btn {
+    width: 60px;
+  }
+}

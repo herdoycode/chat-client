@@ -1,0 +1,43 @@
+.root__chat {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+  padding: 5px;
+}
+.root__chat:hover {
+  background: #ddd;
+  transition: 0.2s;
+}
+.chat__img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 4px solid #9aa881;
+  object-fit: cover;
+}
+.online {
+  position: relative;
+}
+.green__dot {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: green;
+  position: absolute;
+  right: 2px;
+}
+
+@media screen and (max-width: 768px) {
+  .chat__info {
+    display: none;
+  }
+  .root__chat {
+    margin-right: 20px;
+    overflow: auto;
+  }
+  .root__chat:hover {
+    background: #fff;
+  }
+}
